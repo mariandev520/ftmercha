@@ -1,197 +1,170 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { init, sendForm } from "emailjs-com";
+
 import Swal from 'sweetalert2';
+import "animate.css"
+import * as emailjs from 'emailjs-com';
 
 // LLama a la función init con el id de Emailjs como parámetro.
-init("user_1xeHhIAqEdSO67KBXZP");
 
-const FormService = () => {
-  const {
-    register,
-    formState: { errors },
-    handleSubmit,
-  } = useForm();
-  
-  const [statusMessage, setStatusMessage] = useState("Mensaje");
-
-  // Función que toma como parámetros el id del servicio, id del template y el id del form. Y envía los datos del form al email.
-  const onSubmit = (data) => {
-    const statusMessage = document.querySelector(".status-message");
-    const form = document.querySelector("#contact-form");
-    sendForm("service_8jhyua7", "template_7ifru1a", "#contact-form").then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-        form.reset();
-        // Alert
-        Swal.fire(
-          'Tu mensaje ha sido enviado',
-          '¡Muchas Gracias!',
-          'success'
-        );
-      },
-      function (error) {
-        console.log("FAILED...", error);
-        setStatusMessage(
-          "Error al enviar el mensaje, por favor intente de nuevo."
-        );
-        statusMessage.className = "status-message failure";
-        setTimeout(() => {
-          statusMessage.className = "status-message";
-        }, 2000);
+    
+class FormService extends React.PureComponent {
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+          name: '',
+          email: '',
+          message: '',
+          number:''
+        };
+    
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.resetForm = this.resetForm.bind(this);
+        this.handleChange = this.handleChange.bind(this);
       }
-    );
-  };
-
-  return (
-    <div>
-      <>
-        <section className="text-gray-600 body-font bg-gray-100">
-          <form
-            className="md:container px-2 py-24 mx-auto"
-            id="contact-form"
-            onSubmit={handleSubmit(onSubmit)}
-          >
-            <div className="flex flex-col text-center w-full mt-24">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-600">Cotiza nuestros servicios</h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Si necesitás un servicio Post Venta en cualquier lugar del país,
-                por favor completá el formulario y en breve te contactamos.</p>
-            </div>
-
-            <style jsx>{`
-              .status-message {
-                opacity: 0;
-                color: red;
-              }
-              .success {
-                opacity: 1;
-              }
-              .failure {
-                opacity: 1;
-              }
-            `}</style>
-
-            <div className=" md:px-5 px-0 py-16 mx-auto">
+    
+      handleSubmit(event) {
+        event.preventDefault();
+    
+        const { name, email,  message , number } = this.state;
+    
+        if(name==='' || email==='' || message ===''  || message ===''  ) { 
+    
+           
+    
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
               
-              <div className="bg-white lg:w-1/2 md:w-2/3 mx-auto p-8 shadow-md">
-                <div className="flex flex-wrap -m-2">
-                  
-                  <div className="p-2 w-full">
-                    <div className="relative">
-                      <label
-                        htmlFor="name"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Nombre y apellido*
-                      </label>
-                   </div>
-                  
-                  <div className="p-2 md:w-1/2 w-full">
-                    <div className="relative">
-                      <label
-                        htmlFor="telefono"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Teléfono*
-                      </label>
-                      <input
-                        type="text"
-                        id="telefono"
-                        name="user_telefono"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                        {...register("user_telefono", { required: true })}
-                      ></input>
-                      {errors.user_telefono?.type === "required" && (
-                        <p className="text-xs text-red-500" role="alert">
-                          Campo obligatorio.
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                  </div>
-                  
-                  <div className="p-2 md:w-1/2 w-full">
-                    <div className="relative">
-                      <label
-                        htmlFor="email"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Email*
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="user_email"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                        {...register("user_email", { required: true })}
-                      ></input>
-                      {errors.user_email?.type === "required" && (
-                        <p className="text-xs text-red-500" role="alert">
-                          Campo obligatorio.
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                  
-            
-                  
-                  <div className="p-2 w-full">
-                    <div className="relative">
-                      <label
-                        htmlFor="nameinstalador"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Nombre y empresa interesada
-                      </label>
-                      <input
-                        type="text"
-                        id="nameinstalador"
-                        name="user_nameinstalador"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                        {...register("user_nameinstalador", { required: true })}
-                      ></input>
-                      {errors.user_nameinstalador?.type === "required" && (
-                        <p className="text-xs text-red-500" role="alert">
-                          Campo obligatorio.
-                        </p>
-                      )}
-                    </div>
-                  </div>
-              </div>
-                    </div>
-                  </div>
-                  <div className="p-2 w-full">
-                    <div className="relative">
-                      <label
+            Toast.fire({
+       
+                icon: 'error',
+                title: 'complete todos los campos' 
+              })
+    
+        } else {
+
+        
+    
+        emailjs.sendForm('service_igde7xi', 'template_test', event.target,'user_DjxbpiGhrI5bsn5NN7Lm7')
+        this.resetForm();
+      ;
+    
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+    
+      Toast.fire({
+       
+        icon: 'success',
+        title: 'Gracias!! En breve responderemos' 
+      })
+        
+        }
+      }
+      resetForm() {
+        this.setState({
+          name: '',
+          email: '',
+          message: '',
+          number:''
+        });
+      }
+    
+    
+    
+      handleChange(event) {
+        this.setState({ [event.target.name]: event.target.value });
+      }
+    
+    
+      render() {
+        const { name, email,message, number } = this.state;
+    
+    
+        return (
+
+            <section>
+            <form    onSubmit={ this.handleSubmit} >
+                
+     
+<div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
+		<div
+			class="absolute inset-0 bg-gradient-to-r from-green-300 to-green-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+		</div>
+		<div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+			<div class="max-w-md mx-auto">
+				<div>
+                    
+					<h1 class="text-2xl font-semibold">Contactate con Nosotr@s </h1>
+				</div>
+				<div class="divide-y divide-gray-200">
+					<div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+				
+                        <div class="relative">
+							<input autocomplete="off" value={name}  onChange={this.handleChange} name="name" type="text" class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" placeholder="Nombre" />
+							
+                            <label htmlFor="name" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Nombre</label>
+						</div>
+                        <div class="relative">
+							<input   autocomplete="off" id="email"  onChange={this.handleChange} value={email} type="email"   name="email" class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" placeholder="Email address" />
+							<label  htmlFor="email" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Email</label>
+						</div>
+                        <div class="relative">
+							<input autocomplete="off" value={number} onChange={this.handleChange} type="number" name="number"  id="telefono"
+                        class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" placeholder="Password" />
+							<label htmlFor="telefono" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Celular</label>
+						</div>
+					</div>
+                    <label
                         htmlFor="message"
                         className="leading-7 text-sm text-gray-600"
                       >
                         Comentario
                       </label>
                       <textarea
+                      value={message}
                         id="message"
                         name="message"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                        onChange={this.handleChange}
+                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-100 ease-in-out"
                       ></textarea>
+                      
                     </div>
+                        
                   </div>
-                  <div><p className="leading-7 text-sm text-gray-600">* Campos obligatorios.</p></div> 
-                  <div className="p-2 w-full">
-                    <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                      Enviar
-                    </button>
-                  </div>
-                  <p className="status-message flex mx-auto text-center">
-                    {statusMessage}
-                  </p>
-               
-            
-           
-          </form>
-        </section>
-      </>
-    </div>
+                  <div class="relative">
+							<button type="submit"  class="bg-green-300 text-white rounded-md px-2 py-1">Contactar</button>
+						</div> 
+				</div>
+        			</div>
+       </div>
+ 
+ </form>
+ </section>
+        
+  
   );
 };
 
+}
 export default FormService;
