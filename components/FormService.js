@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-
+import swal from 'sweetalert';
 import Swal from 'sweetalert2';
 import "animate.css"
 import * as emailjs from 'emailjs-com';
@@ -45,11 +45,11 @@ class FormService extends React.PureComponent {
                 }
               })
               
-            Toast.fire({
+            swal(
        
-                icon: 'error',
-                title: 'complete todos los campos' 
-              })
+                
+                 'complete todos los campos' 
+              )
     
         } else {
 
@@ -72,7 +72,7 @@ class FormService extends React.PureComponent {
       })
       
     
-      Toast.fire({
+      swal({
        
         icon: 'success',
         title: 'Gracias!! En breve responderemos' 
