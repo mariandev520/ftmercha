@@ -101,13 +101,16 @@ class FormService extends React.PureComponent {
     
     
         return (
+            
+            <section >
 
-            <section>
+
+              <div class="bg-gradient-to-r from-green-200  min-h-screen  py-6 flex flex-col justify-center sm:py-12">
+	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
             <form class="animate__animated animate__backInUp  animate__delay-2s "   onSubmit={ this.handleSubmit} >
                 
      
-<div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
+
 		<div
 			class="absolute inset-0 bg-gradient-to-r from-green-300 to-green-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
 		</div>
@@ -127,7 +130,7 @@ class FormService extends React.PureComponent {
 						</div>
                         <div class="relative">
 							<input   autocomplete="off" id="email"  onChange={this.handleChange} value={email} type="email"   name="email" class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" placeholder="Email address" />
-							<label  htmlFor="email" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Email</label>
+							<label  htmlFor="email" class="absolute left-0 -top-3.5 caret-green-200 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"> <p className="font-bold">Email</p></label>
 						</div>
                         <div class="relative">
 							<input autocomplete="off" value={number} onChange={this.handleChange} type="number" name="number"  id="telefono"
@@ -138,15 +141,15 @@ class FormService extends React.PureComponent {
                     <label
                         htmlFor="message"
                         className="leading-7 text-sm text-gray-600"
-                      >
-                        Comentario
+                      ><p className="font-bold"> Comentario </p>
+                        
                       </label>
-                      <textarea
+                      <textarea 
                       value={message}
                         id="message"
                         name="message"
                         onChange={this.handleChange}
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-100 ease-in-out"
+                        className="w-full bg-gray-100 bg-opacity-50 caret-green-200 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-100 ease-in-out"
                       ></textarea>
                       
                     </div>
@@ -156,10 +159,12 @@ class FormService extends React.PureComponent {
 							<button type="submit"  class="bg-green-300 text-white rounded-md px-2 py-1">Contactar</button>
 						</div> 
 				</div>
+</form>
         			</div>
+                    
        </div>
  
- </form>
+
  </section>
         
   
