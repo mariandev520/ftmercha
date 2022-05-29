@@ -105,9 +105,9 @@ class FormService extends React.PureComponent {
             <section >
 
 
-              <div class="bg-gradient-to-r from-green-200  min-h-screen  py-6 flex flex-col justify-center sm:py-12">
+              <div class="bg-gradient-to-r from-green-00  min-h-screen  py-6 flex flex-col justify-center sm:py-12">
 	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
-            <form class="animate__animated animate__backInUp  animate__delay-2s "   onSubmit={ this.handleSubmit} >
+            <form class="animate__animated animate__backInUp  animate__delay-2s "  onSubmit={ this.handleSubmit} >
                 
      
 
@@ -115,7 +115,7 @@ class FormService extends React.PureComponent {
 			class="absolute inset-0 bg-gradient-to-r from-green-300 to-green-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
 		</div>
 		<div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-			<div class="max-w-md mx-auto">
+			<div  class="max-w-md mx-auto">
 				<div>
                     
 					<h1 class="text-2xl font-semibold">Contactate con Nosotr@s </h1>
@@ -156,7 +156,7 @@ class FormService extends React.PureComponent {
                         
                   </div>
                   <div class="relative">
-							<button type="submit"  class="bg-green-300 text-white rounded-md px-2 py-1">Contactar</button>
+							<button type="submit"  class="bg-gradient-to-r from-green-300 to-green-800 hover:from-green-400 hover:to-green bg-green-300 text-white rounded-md px-2 py-1">Contactar</button>
 						</div> 
 				</div>
 </form>
