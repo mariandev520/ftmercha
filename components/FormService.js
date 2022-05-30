@@ -126,7 +126,7 @@ class FormService extends React.PureComponent {
                         <div class="relative">
 							<input autocomplete="off" value={name}  onChange={this.handleChange} name="name" type="text" class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" placeholder="Nombre" />
 							
-                            <label htmlFor="name" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Nombre</label>
+                            <label htmlFor="name" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"><p className="font-bold">Nombre</p></label>
 						</div>
                         <div class="relative">
 							<input   autocomplete="off" id="email"  onChange={this.handleChange} value={email} type="email"   name="email" class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" placeholder="Email address" />
@@ -135,7 +135,7 @@ class FormService extends React.PureComponent {
                         <div class="relative">
 							<input autocomplete="off" value={number} onChange={this.handleChange} type="number" name="number"  id="telefono"
                         class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" placeholder="Password" />
-							<label htmlFor="telefono" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Celular</label>
+							<label htmlFor="telefono" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"><p className="font-bold">Celular</p></label>
 						</div>
 					</div>
                     <label
@@ -156,7 +156,7 @@ class FormService extends React.PureComponent {
                         
                   </div>
                   <div class="relative">
-							<button type="submit"  class="bg-gradient-to-r from-green-300 to-green-800 hover:from-green-400 hover:to-green bg-green-300 text-white rounded-md px-2 py-1">Contactar</button>
+							<button type="submit"  class="bg-gradient-to-r from-green-300 to-green-400 hover:from-green-400 hover:to-green bg-green-400 text-white rounded-md px-2 py-1">Contactar</button>
 						</div> 
 				</div>
 </form>
