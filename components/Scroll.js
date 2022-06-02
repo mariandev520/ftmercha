@@ -30,7 +30,7 @@ const Scroll = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="w-12 md:w-14 fixed bottom-5 right-5"
+      className="w-20 md:w-9 fixed bottom-2 left-10"
     >
       {showArrow ? (
         <svg

@@ -3,6 +3,12 @@ import Link from "next/link";
 import "animate.css";
 import { Button } from "react-scroll";
 
+function dhat() {
+  { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/62960b923a5ff3002a347c4e/62960b933a5ff3002a347c52.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); }
+ 
+
+ }
+
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -13,7 +19,7 @@ const Navbar = () => {
           <div className="animate__animated animate__backInDown animate__delay-2s "  className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
               <a className="inline-block mr-4  border-4 border-grey-100 border-l-grey-300  bg-no-repeat bg-center rounded-lg  content-start whitespace-no-wrap object-contain w-20 md:w-36 cursor-pointer">
-                <img class="animate__animated animate__backInDown animate__delay-2s " src="/logo-emege.png" />
+                <img onClick={dhat} class="animate__animated animate__backInDown animate__delay-2s " src="/logo-emege.png" />
               </a>
             </Link>
             <button
@@ -61,7 +67,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link  href="/contacto">
                   <a   className="px-3 py-2 flex items-center text-lg text-green-500 hover:opacity-75 cursor-pointer pr-8">
-                <h3 class="animate__animated animate__heartBeat animate__slower 2s animate__infinite infinite"> Contacto</h3>
+                <h3 onClick={dhat} class="animate__animated animate__heartBeat animate__slower 2s animate__infinite infinite"> Contacto</h3>
                   </a>
                 </Link>
                </li>

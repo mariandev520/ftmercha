@@ -1,6 +1,10 @@
 import Link from "next/link";
 import "animate.css";
 
+
+
+
+
 const Footer = () => {
   return (
     <>
@@ -13,6 +17,7 @@ const Footer = () => {
             <p className="mt-2 text-sm text-gray-500">
             © Copyright 2022 - Full Time Group Av Congreso 5444 – C1431
             </p>
+            
           </div>
           <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -77,10 +82,12 @@ const Footer = () => {
                   </a>
                 </li>
               </nav>
+          
             </div>
           </div>
         </div>
       </footer>
+      
     </>
   );
 };
