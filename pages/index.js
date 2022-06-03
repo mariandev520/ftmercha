@@ -14,9 +14,11 @@ const Index = () => {
   return (
     <div className="text-gray-200">
       <Layout>
-        <Navbar />
+        <Navbar  />
+      
        
         <Slide />
+       
 
         <section className=" body-font bg-gray-100">
           <div className="container px-5 md:py-24 py-12 mx-auto flex flex-wrap">
