@@ -1,6 +1,6 @@
 import Layout from '../components/layout/Layout';
-import { euro } from '../cards'
-import Link from 'next/link';
+
+
 
 const euro = () => {
     return ( 
