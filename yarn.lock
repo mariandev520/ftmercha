@@ -2798,6 +2798,11 @@
   "resolved" "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz"
   "version" "0.0.3"
 
+"transition-style@^0.1.1":
+  "integrity" "sha512-ZUSoAc9Z0Mk1yTz56seE7Hv7aY2Et8DZ9fINDl+KGr2pYJ5ExUFwRHHUzbM73Jvpjv3GjWtJRCD/G7JWDVghyQ=="
+  "resolved" "https://registry.npmjs.org/transition-style/-/transition-style-0.1.1.tgz"
+  "version" "0.1.1"
+
 "tslib@^2.1.0":
   "integrity" "sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.3.0.tgz"

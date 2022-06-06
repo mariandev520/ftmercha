@@ -23,6 +23,7 @@
     "sweetalert": "^2.1.2",
     "sweetalert2": "11.0.18",
     "swiper": "6.5.7",
-    "tailwind": "^4.0.0"
+    "tailwind": "^4.0.0",
+    "transition-style": "^0.1.1"
   }
 }

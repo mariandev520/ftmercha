@@ -1,6 +1,7 @@
 import Layout from "../components/layout/Layout";
 import Navbar from "../components/layout/Navbar";
 import Slide from "../components/Slide";
+import 'transition-style';
 
 
 import Link from "next/link";
@@ -22,7 +23,7 @@ const Index = () => {
 
         <section className=" body-font bg-gray-100">
           <div className="container px-5 md:py-24 py-12 mx-auto flex flex-wrap">
-            <div className="md:w-2/3 w-full mx-auto">
+            <div transition-style="in:wipe:up" className="md:w-2/3 w-full mx-auto">
               <Link href="/patagonia">
                 
                 <a className="flex flex-wrap w-full h-96 bg-gray-100 md:py-32 relative mb-4 overflow test">
@@ -42,7 +43,7 @@ const Index = () => {
                 </a>
               </Link>
               <div className="flex flex-wrap -mx-2">
-                <div className="md:w-1/2 p-2 w-full">
+                <div transition-style="in:wipe:bottom-right" className="md:w-1/2 p-2 w-full">
                   <Link href="/euro">
                     <a className="flex flex-wrap w-full bg-gray-100 md:py-32 py-20 relative mb-4 overflow test">
                       <img
@@ -61,7 +62,7 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <div className="md:w-1/2 p-2 w-full">
+                <div transition-style="in:wipe:bottom-left" className="md:w-1/2 p-2 w-full">
                   <Link href="/termos">
                     <a className="flex flex-wrap w-full bg-gray-100 md:py-32 py-20 relative mb-4 overflow test">
                       <img
@@ -175,6 +176,7 @@ const Index = () => {
   </div>
 </section>
       </section>
+
       </Layout>
     </div>
   );

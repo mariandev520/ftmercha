@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import "animate.css";
 import { Button } from "react-scroll";
+import "transition-style"
 
 function dhat() {
   { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/62960b923a5ff3002a347c4e/62960b933a5ff3002a347c52.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); }
@@ -11,11 +12,12 @@ function dhat() {
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  
 
   return (
     <header>
-      <nav className="md:bg-transparent bg-white absolute w-full h-14 items-center justify-center px-2 md:bg-opacity-0 z-10">
-        <div className="container md:bg-transparent bg-white px-4 mx-auto flex flex-wrap items-center justify-between">
+      <nav  className="md:bg-transparent bg-white absolute w-full h-14 items-center justify-center px-2 md:bg-opacity-0 z-10">
+        <div transition-style="in:wipe:bottom-right" className="container md:bg-transparent bg-white px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="animate__animated animate__backInDown animate__delay-2s "  className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
               <a className="inline-block mr-4  border-4 border-grey-100 border-l-grey-300  bg-no-repeat bg-center rounded-lg  content-start whitespace-no-wrap object-contain w-20 md:w-36 cursor-pointer">

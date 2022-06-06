@@ -2,6 +2,7 @@
 import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
 import "swiper/components/pagination/pagination.min.css"
 import { Swiper, SwiperSlide} from 'swiper/react';
+import "transition-style";
 
 // Import Swiper styles
 // import 'swiper/swiper-bundle.css';
@@ -13,10 +14,12 @@ function dhat() {
    
   
    }
+   
 
 const Slide = () => {
     
     return ( 
+        
         
         <Swiper
     
@@ -27,8 +30,8 @@ const Slide = () => {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide><img onClick={dhat} src="/img-main-patagonia.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
-            <SwiperSlide><img onClick={dhat} src="/img-main-euro.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+            <SwiperSlide transition-style="in:square:bottom-right"><img  onClick={dhat} src="/img-main-patagonia.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+            <SwiperSlide  ><img onClick={dhat} src="/img-main-euro.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
             <SwiperSlide><img  onClick={dhat} src="/pepe3.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
             <SwiperSlide><img onClick={dhat} src="/img-section-main-termos-eco.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
         </Swiper>
