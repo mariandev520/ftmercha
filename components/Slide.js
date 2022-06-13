@@ -26,7 +26,7 @@ const Slide = () => {
     
             navigation
             pagination={true} 
-            autoplay={{delay: 3000, disableOnInteraction: false+{dhat}}}
+            autoplay={{delay: 7000, disableOnInteraction: false+{dhat}}}
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
