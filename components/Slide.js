@@ -3,7 +3,8 @@ import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
 import "swiper/components/pagination/pagination.min.css"
 import { Swiper, SwiperSlide} from 'swiper/react';
 import "transition-style";
-import logo from "../public/loco.svg"
+
+
 
 // Import Swiper styles
 // import 'swiper/swiper-bundle.css';
@@ -26,15 +27,16 @@ const Slide = () => {
     
             navigation
             pagination={true} 
-            autoplay={{delay: 7000, disableOnInteraction: false+{dhat}}}
+            autoplay={{delay: 5000, disableOnInteraction: false+{dhat}}}
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide transition-style="in:square:bottom-right"><img  onClick={dhat} src="/test8.gif" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+            <SwiperSlide transition-style="in:square:bottom-right"><img  onClick={dhat} src='test8.gif' className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
             <SwiperSlide > <img  onClick={dhat} src='tango2.gif'  className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
             <SwiperSlide><img  onClick={dhat} src="/test6 .gif" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
-            <SwiperSlide><img onClick={dhat} src="/img-section-main-termos-eco.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+     
+            <SwiperSlide><img onClick={dhat} src="/tema5.png" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
         </Swiper>
     );
 }

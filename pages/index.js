@@ -21,6 +21,7 @@ const Index = () => {
         <Slide />
        
 
+
         <section className=" body-font bg-gray-100">
           <div className="container px-5 md:py-24 py-12 mx-auto flex flex-wrap">
             <div transition-style="in:wipe:up" className="md:w-2/3 w-full mx-auto">
@@ -34,6 +35,7 @@ const Index = () => {
                   />
                   <div className="details text-white">
                     <h2 className="text-3xl font-medium title-font mb-2">
+                      
                   
                     </h2>
                     <p className="leading-relaxed">
@@ -80,10 +82,12 @@ const Index = () => {
                       </div>
                     </a>
                   </Link>
+                 
                 </div>
               </div>
             </div>
           </div>
+
         </section>
         
             
