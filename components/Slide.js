@@ -23,17 +23,18 @@ const Slide = () => {
     return ( 
         
         
+        
         <Swiper
     
             navigation
             pagination={true} 
-            autoplay={{delay: 5000, disableOnInteraction: false+{dhat}}}
+            autoplay={{delay: 4000, disableOnInteraction: false+{dhat}}}
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide transition-style="in:square:bottom-right"><img  onClick={dhat} src='test8.gif' className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
-            <SwiperSlide > <img  onClick={dhat} src='tango2.gif'  className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+            <SwiperSlide transition-style="in:square:bottom-right">  <img  onClick={dhat} src='move22.svg' className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide> 
+            <SwiperSlide > <img  onClick={dhat} src='movi1.svg'  className="md:h-screen w-screen object-cover md:mt-26"/> </SwiperSlide>
             <SwiperSlide><img  onClick={dhat} src="/test6 .gif" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
      
             <SwiperSlide><img onClick={dhat} src="/tema5.png" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>

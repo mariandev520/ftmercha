@@ -2,6 +2,11 @@ import Layout from "../components/layout/Layout";
 import Navbar from "../components/layout/Navbar";
 import Slide from "../components/Slide";
 import 'transition-style';
+import { motion, useAnimation } from "framer-motion";
+
+import { useInView } from "react-intersection-observer";
+
+import { useEffect } from "react";
 
 
 import Link from "next/link";
@@ -82,11 +87,15 @@ const Index = () => {
                       </div>
                     </a>
                   </Link>
-                 
+                  <div>
+  </div>
+
+
                 </div>
               </div>
             </div>
           </div>
+    
 
         </section>
         
@@ -177,7 +186,7 @@ const Index = () => {
   </div>
 </section>
       </section>
-
+ 
       </Layout>
     </div>
   );
