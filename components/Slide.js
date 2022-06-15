@@ -35,9 +35,9 @@ const Slide = () => {
         >
             <SwiperSlide transition-style="in:square:bottom-right">  <img  onClick={dhat} src='move24.png' className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide> 
             <SwiperSlide > <img  onClick={dhat} src='meta1.png'  className="md:h-screen w-screen object-cover md:mt-26"/> </SwiperSlide>
-            <SwiperSlide><img  onClick={dhat} src="/test6 .gif" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+            <SwiperSlide>   <img  onClick={dhat} src="/trade.png" className="md:h-screen w-screen object-cover md:mt-26"/> </SwiperSlide>
      
-            <SwiperSlide><img onClick={dhat} src="/tema7.png" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+            <SwiperSlide><img onClick={dhat} src="/ten5.png" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
         </Swiper>
     );
 }
