@@ -49,21 +49,21 @@ const Navbar = () => {
           <ul className=' flex flex-col lg:flex-row list-none lg:ml-auto font-semibold'>
             <li className='nav-item pr-10'>
               <Link href='/patagonia'>
-                <a className=' px-3 py-2 flex items-center text-xl text-green-500 hover:opacity-75 cursor-pointer '>
+                <a className=' px-3 py-2 flex items-center text-xl text-green-400 hover:text-white '>
                   Cobertura Servicio
                 </a>
               </Link>
             </li>
             <li className='nav-item pr-10'>
               <Link href='/euro'>
-                <a className='px-3 py-2 flex items-center text-lg text-green-500 hover:opacity-75 cursor-pointer'>
+                <a className='px-3 py-2 flex items-center text-lg text-green-400 hover:text-white'>
                   Promociones y Eventos
                 </a>
               </Link>
             </li>
             <li className='nav-item pr-10'>
               <Link href='/electro'>
-                <a className='px-3 py-2 flex items-center text-lg border-white text-green-500 hover:opacity-75 cursor-pointer'>
+                <a className='px-3 py-2 flex items-center text-lg border-white text-green-400 hover:text-white'>
                   Electro Trade
                 </a>
               </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
                   </li> */}
             <li className='nav-item'>
               <Link href='/contacto'>
-                <a className='px-3 py-2 flex items-center text-lg text-green-500 hover:opacity-75 cursor-pointer pr-8'>
+                <a className='px-3 py-2 flex items-center text-lg text-green-400 hover:text-white pr-8'>
                   <h3
                     onClick={dhat}
                     class='animate__animated animate__heartBeat animate__slower 2s animate__infinite infinite'
