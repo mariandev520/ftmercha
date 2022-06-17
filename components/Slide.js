@@ -37,7 +37,7 @@ const Slide = () => {
             <SwiperSlide > <img  onClick={dhat} src='movi1.svg'  className="md:h-screen w-screen object-cover md:mt-26"/> </SwiperSlide>
             <SwiperSlide><img  onClick={dhat} src="/tra44.svg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
      
-            <SwiperSlide><img onClick={dhat} src="/tema5.png" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+            <SwiperSlide><img onClick={dhat} src="/ten3.png" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
         </Swiper>
     );
 }
