@@ -55,7 +55,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item pr-10'>
-              <Link href='/euro'>
+              <Link href='/promociones'>
                 <a className='px-3 py-2 flex items-center text-lg text-green-400 hover:text-white'>
                   Promociones y Eventos
                 </a>
