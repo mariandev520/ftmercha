@@ -2,10 +2,19 @@ import Link from 'next/link';
 import Layout from '../components/layout/Layout';
 import { termos } from '../cards';
 
+import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
+import "swiper/components/pagination/pagination.min.css"
+import { Swiper, SwiperSlide} from 'swiper/react';
+import "transition-style";
+
+SwiperCore.use([ Navigation, Pagination, Autoplay ]);
+
 const Termos = () => {
   return (
     <Layout>
     
+  
+
       <section className="py-24 mx-auto flex flex-wrap">
       
 <div class=" flex justify-center items-center bg-slate-900 ">
@@ -41,33 +50,58 @@ const Termos = () => {
 
         <div class="grid grid-cols-6 col-span-2   gap-2  ">
           <div class=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
-            <img class="h-full w-full object-cover "
-                 src="/leno4.jpg"
-                 alt=""></img>
+                
+        
+    <Swiper
+    
+    navigation
+    pagination={false} 
+    autoplay={{delay: 6000, disableOnInteraction: false}}
+    slidesPerView={1}
+    onSlideChange={() => console.log('slide change')}
+    onSwiper={(swiper) => console.log(swiper)}
+>
+    <SwiperSlide transition-style="in:square:bottom-right">  <img  src='leno5.jpg' className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide> 
+    <SwiperSlide >   <img   src='leno.jpg'  className="md:h-screen w-screen object-cover md:mt-26"/> </SwiperSlide>
+    <SwiperSlide><img   src="leno3.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+    <div            
+                class="text-white animate__animated animate__backInDown animate__delay-2s text-xl absolute inset-0 mt-32 text-4xl  text-left text-white font-bold bg-slate-900/80 flex justify-center items-center">
+  Fulltimegroup
+            </div>
+
+    <SwiperSlide><img src="leno4.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+</Swiper>
+            
           </div>
           <div class=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
-            <img class="h-full w-full object-cover  "
-                 src="leno3.jpg"
-                 alt=""></img>
+        
+              
+        
+    <Swiper
+    
+    navigation
+    pagination={false} 
+    autoplay={{delay: 3000, disableOnInteraction: false}}
+    slidesPerView={1}
+    onSlideChange={() => console.log('slide change')}
+    onSwiper={(swiper) => console.log(swiper)}
+>
+    <SwiperSlide transition-style="in:square:bottom-right">  <img  src='leno.jpg' className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide> 
+    <SwiperSlide >   <img   src='leno3.jpg'  className="md:h-screen w-screen object-cover md:mt-26"/> </SwiperSlide>
+    <SwiperSlide><img   src="leno5.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+
+    <SwiperSlide><img src="leno5.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+</Swiper>
           </div>
           <div class=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-            <img class="h-full w-full object-cover "
-                 src="leno5.jpg"
-                 alt=""></img>
+        
           </div>
           <div class=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-            <img class="h-full w-full object-cover "
-                 src="leno6.jpg"
-                 alt=""></img>
+      
           </div>
           <div class="relative overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-            <div
-                class="text-white text-xl absolute inset-0  bg-slate-900/80 flex justify-center items-center">
-              + 23
-            </div>
-            <img class="h-full w-full object-cover "
-                 src="leno.jpg"
-                 alt=""></img>
+           
+          
           </div>
         </div>
 
