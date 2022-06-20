@@ -34,7 +34,7 @@ const Slide = () => {
             onSwiper={(swiper) => console.log(swiper)}
         >
             <SwiperSlide transition-style="in:square:bottom-right">  <img  onClick={dhat} src='move22.svg' className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide> 
-            <SwiperSlide > <img  onClick={dhat} src='movi1.svg'  className="md:h-screen w-screen object-cover md:mt-26"/> </SwiperSlide>
+            <SwiperSlide >   <img  onClick={dhat} src='movi1.svg'  className="md:h-screen w-screen object-cover md:mt-26"/> </SwiperSlide>
             <SwiperSlide><img  onClick={dhat} src="/tra44.svg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
      
             <SwiperSlide><img onClick={dhat} src="/ten3.png" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
