@@ -36,7 +36,7 @@ const Scroll = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
-          fill="#ef7b0b"
+          fill="#32a735"
         >
           <path
             fillRule="evenodd"
