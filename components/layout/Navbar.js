@@ -87,7 +87,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li
-              class='animate__animated animate__fadeInRightBig animate__slow 2s '
+            //  class='animate__animated animate__fadeInRightBig animate__slow 2s '
               className='nav-item'
             >
               <Link
@@ -103,7 +103,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li
-              class='animate__animated animate__fadeInRightBig animate__slow 3s '
+            //  class='animate__animated animate__fadeInRightBig animate__slow 3s '
               className='nav-item'
             >
               <Link href='https://www.facebook.com/fulltimegroup'>
