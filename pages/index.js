@@ -70,7 +70,7 @@ const Index = () => {
                   </Link>
                 </div>
                 <div transition-style="in:wipe:bottom-left" className="md:w-1/2 p-2 w-full">
-                  <Link href="/termos">
+                  <Link href="/warhouse">
                     <a className="flex flex-wrap w-full bg-gray-100 md:py-32 py-20 relative mb-4 overflow test">
                       <img
                         alt="gallery"
