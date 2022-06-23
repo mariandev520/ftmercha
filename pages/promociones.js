@@ -166,7 +166,7 @@ const Promociones = () => {
      
 
        
-<div id="services" class="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white">
+<div id="services" class="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white animate__animated animate__zoomIn animate__slow 2s">
     <div class="container xl:max-w-6xl mx-auto px-4">
        
         <div class="text-center mx-auto mb-12 lg:px-20">

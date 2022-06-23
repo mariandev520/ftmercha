@@ -113,7 +113,7 @@ const Termos = () => {
       
       </section>
 
-      <section class='text-gray-600 body-font mt-60'>
+      <section class='text-gray-600 body-font mt-60 animate__animated animate__zoomIn animate__slow 2s'>
         <div class='container px-5 py-24 mx-auto'>
           <div class='text-center mb-20'>
             <h1 class='sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4'>

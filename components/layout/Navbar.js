@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <header>
-    <nav className='md:bg-transparent bg-white absolute w-full h-14 items-center justify-center px-2 md:bg-opacity-0 z-10 animate__animated animate__zoomInDown animate__slow 3s'>
+    <nav className='md:bg-transparent bg-white absolute w-full h-14 items-center justify-center px-2 md:bg-opacity-0 z-10 animate__animated animate__zoomIn animate__slow 2s  '>
       <div
         transition-style='in:wipe:bottom-right'
         className='container md:bg-transparent bg-white px-4 mx-auto flex flex-wrap items-center justify-between'
@@ -49,21 +49,21 @@ const Navbar = () => {
           <ul className=' flex flex-col lg:flex-row list-none lg:ml-auto font-semibold'>
             <li className='nav-item pr-10'>
               <Link href='/patagonia'>
-                <a className=' px-3 py-2 flex items-center text-xl text-green-400 hover:text-white '>
+                <a className=' px-3 py-2 flex items-center text-xl text-green-400 hover:text-white   '>
                   Cobertura Servicio
                 </a>
               </Link>
             </li>
             <li className='nav-item pr-10'>
               <Link href='/promociones'>
-                <a className='px-3 py-2 flex items-center text-lg text-green-400 hover:text-white'>
+                <a className='px-3 py-2 flex items-center text-lg text-green-400 hover:text-white  '>
                   Promociones y Eventos
                 </a>
               </Link>
             </li>
             <li className='nav-item pr-10'>
               <Link href='/electro'>
-                <a className='px-3 py-2 flex items-center text-lg border-white text-green-400 hover:text-white'>
+                <a className='px-3 py-2 flex items-center text-lg border-white text-green-400 hover:text-white  '>
                   Electro Trade
                 </a>
               </Link>
