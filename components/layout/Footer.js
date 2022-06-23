@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <img class="animate__animated animate__pulse animate__slow 1s animate__infinite" className="title-font font-medium text-gray-600 tracking-widest text-sm mb-3" className="w-20 h-auto" src="/logo-emege.png" />
+              <img class="animate__animated animate__pulse animate__slow 2s animate__infinite" className="title-font font-medium text-gray-600 tracking-widest text-sm mb-3" className="w-20 h-auto" src="/logo-emege.png" />
             </a>
             <p className="mt-2 text-sm text-gray-500">
             © Copyright 2022 - Full Time Group Av Congreso 5444 – C1431
@@ -67,7 +67,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="animate__animated animate__pulse animate__slow 1s animate__infinite" className="title-font font-medium text-gray-600 tracking-widest text-sm mb-3">
+              <h2 class="animate__animated animate__lightSpeedInLeft animate__slow 1s " className="title-font font-medium text-gray-600 tracking-widest text-sm mb-3">
                 CONTACTO
               </h2>
               <nav className="list-none mb-10">

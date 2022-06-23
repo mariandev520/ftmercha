@@ -108,13 +108,13 @@ const Index = () => {
 <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
         <div class="absolute top-0 w-full h-full bg-center bg-cover" 
           >
-          <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-gray-300"></span>
+          <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-gradient-to-br from-green-400 to-green-200 "></span>
         </div>
         <div class="container relative mx-auto">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
-                <h1 class=" font-semibold text-5xl text-gray-400 hover:text-green-800">
+                <h1 class=" font-semibold text-5xl text-gray-500 hover:text-green-800">
                  Crecimiento Garantizado 
                 </h1>
                 <p class="mt-4 text-lg text-gray-700">
@@ -130,7 +130,7 @@ const Index = () => {
           </svg>
         </div>
       </div>
-      <section  class=" pb-10 bg-blueGray-200 -mt-24 animate__animated animate__pulse animate__slow 3s animate__infinite">
+      <section  class=" pb-10 bg-blueGray-200 -mt-24 animate__animated animate__pulse animate__slow 3s ">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -140,7 +140,7 @@ const Index = () => {
                     <i class="fas fa-award"></i>
                   </div>
                   <h6 class="text-xl text-gray-600   font-semibold ">Agencia Laboral</h6>
-                  <p class="mt-2 mb-4 text-green-700 ">
+                  <p class="mt-2 mb-4 text-gray-400 hover:text-green-800 ">
                    Años de experiencia aseguran nuestro organizacion de los recursos humanos mas espeficicos y dedicados.
                   </p>
                 </div>
@@ -156,7 +156,7 @@ const Index = () => {
                   </div>
                 
                   <h6 class="text-xl text-gray-600 font-semibold ">Inversiones Seguras</h6>
-                  <p class="mt-2 mb-4 text-green-700">
+                  <p class="mt-2 mb-4 text-gray-400 hover:text-green-800 cursor-pointer">
                     Su inversion en nuestros servicios potencia su negocio a lo largo del desarrollo de su cartera de productos y clientes.
                   </p>
                   </div>
@@ -170,7 +170,7 @@ const Index = () => {
                     <i class="fas fa-fingerprint"></i>
                   </div>
                   <h6  class="text-xl  text-gray-600  font-semibold">Marketing Grafica Digital</h6>
-                  <p class="mt-2 mb-4 text-green-700">
+                  <p class="mt-2 mb-4 text-gray-400 hover:text-green-800 cursor-pointer">
                   Publicidad gráfica especializada en carteleria, señalización, corporeos, leds, exhibidores , fotografía, decoración de vehículos, puntos de venta.
                   </p>
                 </div>
