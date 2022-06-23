@@ -102,7 +102,7 @@ const Index = () => {
             
 
 
-<section className="animate__animated animate__backInUp
+<section className="animate__animated animate__rollIn
  animate__delay-2s "
  class="relative  bg-blueGray-50">
 <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
@@ -130,7 +130,7 @@ const Index = () => {
           </svg>
         </div>
       </div>
-      <section  class=" pb-10 bg-blueGray-200 -mt-24 animate__animated animate__pulse animate__slow 1s animate__infinite">
+      <section  class=" pb-10 bg-blueGray-200 -mt-24 animate__animated animate__pulse animate__slow 3s animate__infinite">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -139,23 +139,27 @@ const Index = () => {
                   <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                     <i class="fas fa-award"></i>
                   </div>
-                  <h6 class="text-xl text-gray-600  font-semibold">Agencia Laboral</h6>
-                  <p class="mt-2 mb-4 text-green-700">
+                  <h6 class="text-xl text-gray-600   font-semibold ">Agencia Laboral</h6>
+                  <p class="mt-2 mb-4 text-green-700 ">
                    Años de experiencia aseguran nuestro organizacion de los recursos humanos mas espeficicos y dedicados.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-4/12 px-4 text-center ">
+     
+            <div class="w-full md:w-4/12 px-4 text-center p-20">
+              <div class="pb-10 bg-blueGray-200 -mt-24 animate__animated animate__pulse animate__slow 1s animate__infinite">
               <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                 <div class="px-4 py-5 flex-auto">
                   <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
                     <i class="fas fa-retweet"></i>
                   </div>
-                  <h6 class="text-xl text-gray-600 font-semibold">Inversiones Seguras</h6>
+                
+                  <h6 class="text-xl text-gray-600 font-semibold ">Inversiones Seguras</h6>
                   <p class="mt-2 mb-4 text-green-700">
                     Su inversion en nuestros servicios potencia su negocio a lo largo del desarrollo de su cartera de productos y clientes.
                   </p>
+                  </div>
                 </div>
               </div>
             </div>
