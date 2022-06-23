@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <header>
-    <nav className='md:bg-transparent bg-white absolute w-full h-14 items-center justify-center px-2 md:bg-opacity-0 z-10'>
+    <nav className='md:bg-transparent bg-white absolute w-full h-14 items-center justify-center px-2 md:bg-opacity-0 z-10 animate__animated animate__zoomInDown animate__slow 3s'>
       <div
         transition-style='in:wipe:bottom-right'
         className='container md:bg-transparent bg-white px-4 mx-auto flex flex-wrap items-center justify-between'
@@ -87,7 +87,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li
-            //  class='animate__animated animate__fadeInRightBig animate__slow 2s '
+              class='animate__animated animate__zoomInDown animate__slow 2s '
               className='nav-item'
             >
               <Link
@@ -103,7 +103,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li
-            //  class='animate__animated animate__fadeInRightBig animate__slow 3s '
+              class='animate__animated animate__zoomInDown animate__slow 3s '
               className='nav-item'
             >
               <Link href='https://www.facebook.com/fulltimegroup'>
