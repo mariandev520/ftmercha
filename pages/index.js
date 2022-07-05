@@ -141,7 +141,7 @@ const Index = () => {
                   </div>
                   <h6 class="text-xl text-gray-600   font-semibold ">Agencia Laboral</h6>
                   <p class="mt-2 mb-4 text-gray-400 hover:text-green-800 ">
-                   Años de experiencia aseguran nuestro organizacion de los recursos humanos mas espeficicos y dedicados.
+                  Años de experiencia aseguran nuestro organización de los recursos humanos más específicos y dedicados.
                   </p>
                 </div>
               </div>
@@ -157,7 +157,7 @@ const Index = () => {
                 
                   <h6 class="text-xl text-gray-600 font-semibold ">Inversiones Seguras</h6>
                   <p class="mt-2 mb-4 text-gray-400 hover:text-green-800 cursor-pointer">
-                    Su inversion en nuestros servicios potencia su negocio a lo largo del desarrollo de su cartera de productos y clientes.
+                  Su inversión en nuestros servicios potencia su negocio a lo largo del desarrollo de su cartera de productos y clientes.
                   </p>
                   </div>
                 </div>
