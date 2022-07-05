@@ -27,7 +27,7 @@ const euro = () => {
                             </span>
 
                             <div class="mt-4 md:mx-4 md:mt-0">
-                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Amplio de Deposito Privado</h1>
+                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Amplio De Depósito Privado</h1>
 
                                 <p class="mt-3 text-gray-500 dark:text-gray-300">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
@@ -43,7 +43,7 @@ const euro = () => {
                             </span>
 
                             <div class="mt-4 md:mx-4 md:mt-0">
-                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Envio Materiales Interior</h1>
+                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Logística de Materiales Interior</h1>
 
                                 <p class="mt-3 text-gray-500 dark:text-gray-300">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
@@ -60,7 +60,7 @@ const euro = () => {
                             </span>
 
                             <div class="mt-4 md:mx-4 md:mt-0">
-                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Colocaciones e Ploteados en Puntos de Ventas</h1>
+                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Colocaciones E Ploteados En Puntos De Ventas</h1>
 
                                 <p class="mt-3 text-gray-500 dark:text-gray-300">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
