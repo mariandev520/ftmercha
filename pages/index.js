@@ -102,7 +102,7 @@ const Index = () => {
             
 
 
-<section className="animate__animated 
+<section className="animate__animated animate__backInUp
  animate__delay-2s "
  class="relative  bg-blueGray-50">
 <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
