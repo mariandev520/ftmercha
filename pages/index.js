@@ -2,6 +2,8 @@ import Layout from "../components/layout/Layout";
 import Navbar from "../components/layout/Navbar";
 import Slide from "../components/Slide";
 import 'transition-style';
+import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 import { motion, useAnimation } from "framer-motion";
 
 import { useInView } from "react-intersection-observer";
@@ -10,6 +12,16 @@ import { useEffect } from "react";
 
 
 import Link from "next/link";
+
+function llamar (){
+
+  swal({
+       
+    icon: 'success',
+    title: 'Gracias pronto recibirás novedades' 
+  })
+}
+
 
 
 const Index = () => {
@@ -202,10 +214,10 @@ const Index = () => {
         <div class="mx-auto md:mx-0">
           <h3 class="text-4xl font-bold text-white">Suscribirse</h3>
           <p class="mt-2 max-w-[20rem] text-lg text-white/80">Recibe las últimas novedades del sector  </p>
-          <form action="" class="mt-4 flex flex-col">
+          <div  class="mt-4 flex flex-col">
             <input type="email" name="email" id="email" placeholder="Ingresa Tu Email" class="w-full rounded border border-white/50 bg-transparent px-3 py-2 text-white placeholder:text-white/50 md:max-w-[18rem]" />
-            <button type="submit" class="mt-4 w-full max-w-[14rem] rounded bg-white/30 px-14 py-2 text-center text-white">Subscribe</button>
-          </form>
+            <button onClick={llamar}  class="mt-4 w-full max-w-[14rem] rounded bg-gray-600 px-14 py-2 text-center text-white">Subscribe</button>
+          </div>
         </div>
       </div>
     </div>
